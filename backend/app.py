@@ -110,13 +110,15 @@ def save_tournoi():
 @app.route('/templateValue', methods=['GET'])
 def template_value():
     # Simuler une réponse
-    general_path = './externe/contours/points/'
+    general_path = './data/externe/contours/points/'
+    name_image_general = 'general_22_08_2024.png'
     output = [
         {
             "texte": 163,
             "position_image": (122, 178, 29, 85),
             "image": "_122_178_29_85.png",
             "general_probabilities" : 0.44,
+            "mean_probabilities": 0.76,
             "chiffres": [
                 {
                     "x": 122,
@@ -148,7 +150,8 @@ def template_value():
 
     response = {
         'general_path': general_path,
-        'data': output
+        'data': output,
+        'name_image_general': name_image_general
     }
 
     return jsonify(response), 200
