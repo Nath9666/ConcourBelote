@@ -1,5 +1,7 @@
 # Projet pour la détection de feuille de marquage de belote
 
+TODO: Refaire le readme en utilisant les nouveaux fichier, le backend ansi que model, et es différentes donnée
+
 ## Objectif
 
 L'objectif est de faciliter la détection de feuille de marquage de belote en utilisant des algorithmes de traitement d'image.
